@@ -22,6 +22,8 @@ This repository is now structured as a portable Frappe app and is ready to be pu
 - unit tests for core promo scenarios
 - installation guidance for a development server
 
+Bench-compatible packaging files also live at the repository root, so `bench get-app` can install the app directly from GitHub.
+
 ## App structure
 
 - `promotional_engine/promotional_engine/api.py`: whitelisted API for POSAwesome
