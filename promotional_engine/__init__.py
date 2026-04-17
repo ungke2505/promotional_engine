@@ -1,2 +1,1 @@
-from .promotional_engine import __version__
-
+__version__ = "0.0.1"

@@ -1,2 +1,13 @@
-from ..promotional_engine.config.desktop import *  # noqa: F401,F403
+from frappe import _
 
+
+def get_data():
+    return [
+        {
+            "module_name": "Promotional Engine",
+            "type": "module",
+            "label": _("Promotional Engine"),
+            "color": "orange",
+            "icon": "octicon octicon-tag",
+        }
+    ]

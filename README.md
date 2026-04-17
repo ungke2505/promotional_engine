@@ -23,8 +23,7 @@ This repository is now structured as a portable Frappe app and is ready to be pu
 - installation guidance for a development server
 
 Bench-compatible packaging files also live at the repository root, so `bench get-app` can install the app directly from GitHub.
-The top-level `promotional_engine` package also exposes Frappe-compatible entry points for bench and app discovery.
-The repository also includes a minimal `public/` asset structure inside the installable app package with a `.bundle.js` entry so Frappe v14 `bench build` can process the app safely.
+The repository follows the standard Frappe app layout, with the installable package at `promotional_engine/` and bundled assets at `promotional_engine/public/`.
 
 ## App structure
 

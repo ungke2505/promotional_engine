@@ -1,6 +1,6 @@
 import unittest
 
-from promotional_engine.promotional_engine.services.promotion_evaluator import evaluate_cart
+from promotional_engine.services.promotion_evaluator import evaluate_cart
 
 
 class PromotionEngineTestCase(unittest.TestCase):
