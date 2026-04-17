@@ -1,0 +1,7 @@
+{
+  "name": "promotional_engine",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Promotional Engine frontend assets for ERPNext v14",
+  "license": "MIT"
+}
