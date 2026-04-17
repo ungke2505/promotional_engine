@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2026-04-17 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field_name",
+  "operator",
+  "value_type",
+  "value"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Field Name",
+   "options": "customer\ncustomer_group\nterritory\ncompany\npos_profile\ncoupon_code\navailable_points\nsubtotal\ntotal_qty\ndistinct_items\nitem_codes\nitem_groups",
+   "reqd": 1
+  },
+  {
+   "default": "=",
+   "fieldname": "operator",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Operator",
+   "options": "=\n!=\n>\n>=\n<\n<=\ncontains\nin",
+   "reqd": 1
+  },
+  {
+   "default": "Data",
+   "fieldname": "value_type",
+   "fieldtype": "Select",
+   "label": "Value Type",
+   "options": "Data\nInt\nFloat\nJSON",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Value",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "module": "Promotional Engine",
+ "name": "Promotion Condition",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-17 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "policy_name",
+  "company",
+  "is_active",
+  "redemption_method",
+  "earn_rate",
+  "redeem_rate",
+  "point_to_currency_rate",
+  "minimum_redeem_points",
+  "maximum_redeem_amount",
+  "maximum_cashback_percent",
+  "rounding_method",
+  "allow_partial_redemption"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Policy Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "default": "Discount",
+   "fieldname": "redemption_method",
+   "fieldtype": "Select",
+   "label": "Redemption Method",
+   "options": "Discount\nCashback\nBoth"
+  },
+  {
+   "fieldname": "earn_rate",
+   "fieldtype": "Float",
+   "label": "Earn Rate"
+  },
+  {
+   "fieldname": "redeem_rate",
+   "fieldtype": "Float",
+   "label": "Redeem Rate"
+  },
+  {
+   "fieldname": "point_to_currency_rate",
+   "fieldtype": "Currency",
+   "label": "Point To Currency Rate",
+   "description": "Monetary value of 1 point when redeemed as cashback or discount."
+  },
+  {
+   "fieldname": "minimum_redeem_points",
+   "fieldtype": "Float",
+   "label": "Minimum Redeem Points"
+  },
+  {
+   "fieldname": "maximum_redeem_amount",
+   "fieldtype": "Currency",
+   "label": "Maximum Redeem Amount"
+  },
+  {
+   "default": "100",
+   "fieldname": "maximum_cashback_percent",
+   "fieldtype": "Percent",
+   "label": "Maximum Cashback Percent"
+  },
+  {
+   "default": "Floor",
+   "fieldname": "rounding_method",
+   "fieldtype": "Select",
+   "label": "Rounding Method",
+   "options": "Floor\nNearest\nCeil"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_partial_redemption",
+   "fieldtype": "Check",
+   "label": "Allow Partial Redemption"
+  }
+ ],
+ "module": "Promotional Engine",
+ "name": "Loyalty Policy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

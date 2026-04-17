@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-17 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "campaign",
+  "rule_name",
+  "rule_type",
+  "is_active",
+  "priority",
+  "apply_scope",
+  "item_code",
+  "item_group",
+  "customer_group",
+  "territory",
+  "pos_profile",
+  "minimum_qty",
+  "minimum_amount",
+  "minimum_distinct_items",
+  "conditions",
+  "discount_type",
+  "discount_value",
+  "maximum_discount_percent",
+  "free_item_code",
+  "free_qty",
+  "coupon_code",
+  "points_action",
+  "loyalty_policy",
+  "allow_with_other_rules"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Campaign",
+   "options": "Promotion Campaign",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "default": "Cart Discount",
+   "fieldname": "rule_type",
+   "fieldtype": "Select",
+   "label": "Rule Type",
+   "options": "Cart Discount\nItem Discount\nBuy X Get Y\nCoupon Validation\nPoints Earn\nPoints Redeem",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "default": "10",
+   "fieldname": "priority",
+   "fieldtype": "Int",
+   "label": "Priority"
+  },
+  {
+   "default": "Cart",
+   "fieldname": "apply_scope",
+   "fieldtype": "Select",
+   "label": "Apply Scope",
+   "options": "Cart\nItem\nCustomer"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "pos_profile",
+   "fieldtype": "Link",
+   "label": "POS Profile",
+   "options": "POS Profile"
+  },
+  {
+   "fieldname": "minimum_qty",
+   "fieldtype": "Float",
+   "label": "Minimum Qty"
+  },
+  {
+   "fieldname": "minimum_amount",
+   "fieldtype": "Currency",
+   "label": "Minimum Amount"
+  },
+  {
+   "fieldname": "minimum_distinct_items",
+   "fieldtype": "Int",
+   "label": "Minimum Distinct Items"
+  },
+  {
+   "fieldname": "conditions",
+   "fieldtype": "Table",
+   "label": "Conditions",
+   "options": "Promotion Condition"
+  },
+  {
+   "default": "Percent",
+   "fieldname": "discount_type",
+   "fieldtype": "Select",
+   "label": "Discount Type",
+   "options": "Percent\nAmount"
+  },
+  {
+   "fieldname": "discount_value",
+   "fieldtype": "Float",
+   "label": "Discount Value"
+  },
+  {
+   "default": "100",
+   "fieldname": "maximum_discount_percent",
+   "fieldtype": "Percent",
+   "label": "Maximum Discount Percent"
+  },
+  {
+   "fieldname": "free_item_code",
+   "fieldtype": "Link",
+   "label": "Free Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "free_qty",
+   "fieldtype": "Float",
+   "label": "Free Qty"
+  },
+  {
+   "fieldname": "coupon_code",
+   "fieldtype": "Data",
+   "label": "Coupon Code"
+  },
+  {
+   "default": "Redeem",
+   "fieldname": "points_action",
+   "fieldtype": "Select",
+   "label": "Points Action",
+   "options": "Redeem\nCashback\nDiscount"
+  },
+  {
+   "fieldname": "loyalty_policy",
+   "fieldtype": "Link",
+   "label": "Loyalty Policy",
+   "options": "Loyalty Policy"
+  },
+  {
+   "fieldname": "allow_with_other_rules",
+   "fieldtype": "Check",
+   "label": "Allow With Other Rules"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Promotional Engine",
+ "name": "Promotion Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

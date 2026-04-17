@@ -1,0 +1,24 @@
+{
+ "content": "[{\"id\":\"engine_intro\",\"type\":\"header\",\"data\":{\"text\":\"<span class='h4'>Promotional Engine Console</span>\",\"col\":12}},{\"id\":\"engine_help\",\"type\":\"text\",\"data\":{\"text\":\"Gunakan halaman ini sebagai pusat setup campaign, rule, coupon, dan loyalty policy untuk POSAwesome.\",\"col\":12}}]",
+ "creation": "2026-04-17 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "octicon octicon-tag",
+ "idx": 0,
+ "modified": "2026-04-17 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Promotional Engine",
+ "name": "promotional-engine-console",
+ "owner": "Administrator",
+ "page_name": "promotional-engine-console",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Promotional Engine Console"
+}

@@ -1,0 +1,25 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"header\",\"type\":\"header\",\"data\":{\"text\":\"<span class='h4'>Promotional Engine</span>\",\"col\":12}},{\"id\":\"shortcut_campaign\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaigns\",\"col\":3,\"doc_view\":\"List\",\"type\":\"DocType\",\"link_to\":\"Promotion Campaign\"}},{\"id\":\"shortcut_rule\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rules\",\"col\":3,\"doc_view\":\"List\",\"type\":\"DocType\",\"link_to\":\"Promotion Rule\"}},{\"id\":\"shortcut_coupon\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Coupon Batches\",\"col\":3,\"doc_view\":\"List\",\"type\":\"DocType\",\"link_to\":\"Coupon Batch\"}},{\"id\":\"shortcut_loyalty\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Loyalty Policies\",\"col\":3,\"doc_view\":\"List\",\"type\":\"DocType\",\"link_to\":\"Loyalty Policy\"}}]",
+ "creation": "2026-04-17 00:00:00.000000",
+ "doctype": "Workspace",
+ "icon": "octicon octicon-tag",
+ "indicator_color": "orange",
+ "is_hidden": 0,
+ "label": "Promotional Engine",
+ "links": [],
+ "module": "Promotional Engine",
+ "name": "Promotional Engine",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 15.0,
+ "shortcuts": [],
+ "title": "Promotional Engine"
+}
